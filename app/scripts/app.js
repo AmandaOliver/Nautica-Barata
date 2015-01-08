@@ -55,6 +55,10 @@ angular
                 templateUrl: 'views/404.html',
                 controller: 'MainCtrl'
             })
+            .when('/c-env', {
+                templateUrl: 'views/condiciones-envio.html',
+                controller: 'MainCtrl'
+            })
             .when('/contact-us', {
                 templateUrl: 'views/contact-us.html',
                 controller: 'MainCtrl'
