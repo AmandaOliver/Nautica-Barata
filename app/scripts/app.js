@@ -59,9 +59,6 @@ angular
                         templateUrl: 'views/contact-us.html',
                         controller: 'MainCtrl'
                     })
-                    .otherwise({
-                        redirectTo: '/'
-                    })
                     .when('/c-env', {
                         templateUrl: 'views/condiciones-envio.html',
                         controller: 'MainCtrl'
@@ -69,5 +66,8 @@ angular
                     .when('/horario', {
                         templateUrl: 'views/horario.html',
                         controller: 'MainCtrl'
+                    })
+                    .otherwise({
+                        redirectTo: '/'
                     });
             });
