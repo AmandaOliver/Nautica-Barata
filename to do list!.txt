@@ -1,6 +1,6 @@
 ------------------Información enlazada por el footer-----------------
 
 --vista de condiciones generales ( copiar texto del footer de la pagina original de nautica barata ) y enlazarlo con el footer
---vista de politica de privacidad ( copiar texto del footer de la pagina original de nautica barata, menos el ultimo párrafo ) y enlazarlo con el footer
+--vista de politica de privacidad ( copiar texto del footer de la pagina original de nautica barata, menos el ultimo párrafo ) y enlazarlo con el footer<<Antonio>>
 --vista de horario comercial ( copiar texto del footer de la pagina original de nautica barata) y enlazarlo con el footer <<Antonio>>
 --vista de condiciones de envío ( copiar texto del footer de la pagina original de nautica barata) y enlazarlo con el footer <<Antonio>>
