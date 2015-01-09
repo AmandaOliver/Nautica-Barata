@@ -71,6 +71,10 @@ angular
                 templateUrl: 'views/privacidad.html',
                 controller: 'MainCtrl'
             })
+            .when('/cond-generales', {
+                templateUrl: 'views/condiciones-generales.html',
+                controller: 'MainCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
