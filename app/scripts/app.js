@@ -67,6 +67,10 @@ angular
                 templateUrl: 'views/horario.html',
                 controller: 'MainCtrl'
             })
+            .when('/privacidad', {
+                templateUrl: 'views/privacidad.html',
+                controller: 'MainCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
