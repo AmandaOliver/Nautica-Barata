@@ -9,7 +9,7 @@ angular.module('getCategoria', ['ngResource']=
 
 })
 
-    .controller('contCategorias', funcion ($scope, Categorias) {
+    .controller('categoriasCtrl', funcion ($scope, Categorias) {
 
                 $scope.categorias = Categorias.query({});
 
