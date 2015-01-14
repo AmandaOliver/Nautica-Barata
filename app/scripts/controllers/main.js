@@ -16,7 +16,7 @@ var myApp=angular.module('nauticaBarataApp', [
     'ngTouch',
     'ngCart'
   ]);
-myApp.controller ('myCtrl', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
+myApp.controller ('cartCtrl', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
     ngCart.setTaxRate(7.5);
     ngCart.setShipping(2.99);
     console.log (ngCart);
@@ -52,7 +52,7 @@ myApp.config(function ($routeProvider) {
                 controller: ''
             })
             .when('/product-details', {
-                templateUrl: 'views/product-details.html',
+                templateUrl: 'views/product.html',
                 controller: ''
             })
             .when('/blog-single', {
