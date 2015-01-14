@@ -1,3 +1,4 @@
+Amanda : modificando index.html que esta en views 
 ------------------Información enlazada por el footer-----------------
 
 --vista de condiciones generales ( copiar texto del footer de la pagina original de nautica barata ) y enlazarlo con el footer<<Antonio>>
