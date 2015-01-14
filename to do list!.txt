@@ -8,3 +8,6 @@ Amanda : modificando index.html que esta en views
 
 ----------------404----------------
 Poner bien el archivo 404.html
+
+----------------index.html app----------------
+implementar la funcionalidad del cuadradito de search (y ya de paso poner search en español)
