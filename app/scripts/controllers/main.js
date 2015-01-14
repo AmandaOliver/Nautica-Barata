@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the nauticaBarataApp
  */
-var myApp=angular.module('nauticaBarataApp', [
+var nauticaBarataApp=angular.module('nauticaBarataApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -16,7 +16,18 @@ var myApp=angular.module('nauticaBarataApp', [
     'ngTouch',
     'ngCart'
   ]);
-myApp.controller ('cartCtrl', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
+nauticaBarataApp.filter('slice', function() {
+  return function(arr, start, end) {
+    return arr.slice(start, end);
+  };
+});
+
+nauticaBarataApp.controller('recomendadosCtrl', function($scope) {
+  $scope.items = [];
+  //sacar items de la tabla recomendados
+  for (var i = 0; i < 100; i++) $scope.items.push(i);
+});
+nauticaBarataApp.controller ('cartCtrl', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
     ngCart.setTaxRate(7.5);
     ngCart.setShipping(2.99);
     console.log (ngCart);
@@ -29,7 +40,7 @@ myApp.controller ('cartCtrl', ['$scope', '$http', 'ngCart', function($scope, $ht
     }
 
 }]);
-myApp.config(function ($routeProvider) {
+nauticaBarataApp.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/index.html',
