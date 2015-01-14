@@ -5,4 +5,8 @@ angular.module('getCategoria', ['ngResource']=
             id: 'DiegoManuel'
         });
 
+    return Productos;
+
+
+
 
