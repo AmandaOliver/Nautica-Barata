@@ -16,11 +16,6 @@ var nauticaBarataApp = angular.module('nauticaBarataApp', [
     'ngTouch',
     'ngCart'
   ]);
-nauticaBarataApp.filter('slice', function () {
-    return function (arr, start, end) {
-        return arr.slice(start, end);
-    };
-});
 
 nauticaBarataApp.config(function ($routeProvider) {
     $routeProvider
