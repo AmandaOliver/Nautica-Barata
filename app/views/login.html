@@ -37,11 +37,11 @@
                     <div class="signup-form">
                         <!--sign up form-->
                         <h2>Nuevo usuario Registrate!</h2>
-                        <form action="#">
-                            <input type="text" placeholder="Nombre" />
-                            <input type="email" placeholder="Email" />
-                            <input type="password" placeholder="Contraseña" />
-                            <button type="submit" class="btn btn-default">Registrarse</button>
+                        <form name="registroUsuario" ng-submit="addUser(usernameR)">
+                            <input type="text" placeholder="Nombre" ng-model="usernameR" />
+                            <input type="email" placeholder="Email" ng-model="email" />
+                            <input type="password" placeholder="Contraseña" ng-model="passwordR" />
+                            <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
                         </form>
                     </div>
                     <!--/sign up form-->
