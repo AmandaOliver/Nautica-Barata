@@ -60,12 +60,12 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             if ((item.usuario == $scope.username) && (item.password == $scope.password)) {
                 encontrado = true;
             }
-            if (encontrado == false) {
-                alert("Error contraseña o usuario incorrecto");
-            } else {
-                auth.login($scope.username, $scope.password);
-            }
         })
+        if (encontrado == false) {
+            alert("Error contraseña o usuario incorrecto");
+        } else {
+            auth.login($scope.username, $scope.password);
+        }
     }
     $scope.addNewUser = function (actionText) {
         $scope.users.items.push({
