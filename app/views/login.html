@@ -20,11 +20,11 @@
                     <div class="login-form">
                         <!--login form-->
                         <h2>Iniciar sesión</h2>
-                        <form name="InicioSesion" ng-controller="loginController" novalidate>
+                        <form name="InicioSesion">
                             <fieldset>
                                 <input type="text" placeholder="Nombre" id="usuario" ng-model="username" />
                                 <input type="password" placeholder="Contraseña" id="password" ng-model="password" />
-                                <button type="submit" ng-disabled="!InicioSesion.$valid" ng-click="login(username,password)" class="btn btn-default">Iniciar sesión</button>
+                                <button type="submit" ng-disabled="!InicioSesion.$valid" ng-click="login(username)" class="btn btn-default">Iniciar sesión</button>
                             </fieldset>
                         </form>
                     </div>
