@@ -67,12 +67,6 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             auth.login($scope.username, $scope.password);
         }
     }
-    $scope.addNewUser = function (actionText) {
-        $scope.users.items.push({
-            action: actionText,
-            done: false
-        });
-    }
     $scope.addUser = function (userDetails) {
         users.items.push({
             username: userDetails.username,
