@@ -22,25 +22,6 @@ nauticaBarataApp.filter('slice', function () {
     };
 });
 
-nauticaBarataApp.controller('recomendadosCtrl', function ($scope) {
-    $scope.items = [];
-    //sacar items de la tabla recomendados
-    for (var i = 0; i < 100; i++) $scope.items.push(i);
-});
-nauticaBarataApp.controller('cartCtrl', ['$scope', '$http', 'ngCart',
-    function ($scope, $http, ngCart) {
-        ngCart.setTaxRate(7.5);
-        ngCart.setShipping(2.99);
-        console.log(ngCart);
-
-        $scope.checkout = function () {
-            $scope.summary = ngCart.toObject();
-
-            // Post your cart to your resource
-            //$http.post('cart/', ngCart.toObject());
-        }
-
-}]);
 nauticaBarataApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
