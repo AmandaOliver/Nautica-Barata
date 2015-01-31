@@ -37,10 +37,9 @@
                     <div class="signup-form">
                         <!--sign up form-->
                         <h2>Nuevo usuario Registrate!</h2>
-                        <form name="registroUsuario" ng-submit="addUser(usernameR)">
-                            <input type="text" placeholder="Nombre" ng-model="usernameR" />
-                            <input type="email" placeholder="Email" ng-model="email" />
-                            <input type="password" placeholder="Contraseña" ng-model="passwordR" />
+                        <form name="registroUsuario" ng-submit="addUser(newUser)">
+                            <input type="text" placeholder="Nombre" ng-model="newUser.username" />
+                            <input type="password" placeholder="Contraseña" ng-model="newUser.password" />
                             <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
                         </form>
                     </div>

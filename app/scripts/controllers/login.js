@@ -9,7 +9,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
             $cookies.username = username,
             $cookies.password = password;
             //mandamos a la home
-            $location.path("/idex");
+            $location.path("/login");
         },
         logout: function () {
             //al hacer logout eliminamos la cookie con $cookieStore.remove
@@ -41,13 +41,12 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
     }
 });
 
-var users = {};
 nauticaBarataApp.run(function ($http) {
     $http.get("scripts/users.json").success(function (data) {
         users.items = data;
     });
 });
-
+var users = {};
 //creamos el controlador pasando $scope y $http, así los tendremos disponibles
 nauticaBarataApp.controller('loginController', function ($scope, auth) {
     //la función login que llamamos en la vista llama a la función
@@ -57,7 +56,7 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
     $scope.login = function () {
         var encontrado = false;
         angular.forEach($scope.users.items, function (item) {
-            if ((item.usuario == $scope.username) && (item.password == $scope.password)) {
+            if ((item.username == $scope.username) && (item.password == $scope.password)) {
                 encontrado = true;
             }
         })
@@ -70,13 +69,11 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
     $scope.addUser = function (userDetails) {
         users.items.push({
             username: userDetails.username,
-            email: userDetails.email,
             password: userDetails.password
-
         });
+        alert("registrado con existo");
     };
 });
-
 
 //creamos el controlador pasando $scope y auth
 nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) {
