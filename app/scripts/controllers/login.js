@@ -20,8 +20,9 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
         },
         checkStatus: function () {
             //creamos un array con las rutas que queremos controlar
-            var rutasPrivadas = ["/cuenta"];
+            var rutasPrivadas = ["/Cuenta"];
             if (this.in_array($location.path(), rutasPrivadas) && typeof ($cookies.username) == "undefined") {
+                alert("Para administrar la cuenta tienes que iniciar sesion");
                 $location.path("/login");
             }
             //en el caso de que intente acceder al login y ya haya iniciado sesión lo mandamos a la home
@@ -90,10 +91,25 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
 //creamos el controlador pasando $scope y auth
 nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) {
     //devolvemos a la vista el nombre del usuario
+    $scope.users = users;
     $scope.username = $cookies.username;
     $scope.password = $cookies.password;
     //la función logout que llamamos en la vista llama a la función
     //logout de la factoria auth
+    $scope.changePassword = function (pass) {
+        var valido = false;
+        if (pass.password == pass.password2) {
+            valido = true;
+        }
+        if (valido == true) {
+            angular.forEach($scope.users.items, function (item) {
+                if ((item.username == $cookies.username)) {
+                    item.password = pass.password;
+                }
+            })
+        }
+        alert("contraseña cambiada");
+    }
     $scope.logout = function () {
         auth.logout();
         alert("sesion cerrada");
