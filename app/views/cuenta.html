@@ -14,24 +14,20 @@
 <body>
     <section id="form">
         <!--form-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-1">
-                    <!--/login form-->
-                </div>
-                <div class="col-sm-4">
-                    <div class="signup-form">
-                        <!--sign up form-->
-                        <h2>Nuevo usuario Registrate!</h2>
-                        <form name="registroUsuario" ng-submit="addUser(newUser)">
-                            <input type="text" placeholder="Nombre" ng-model="newUser.username" />
-                            <input type="password" placeholder="Contraseña" ng-model="newUser.password" />
-                            <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
-                        </form>
-                    </div>
-                    <!--/sign up form-->
-                </div>
+        <div class="col-sm-4 col-sm-offset-1">
+            <div class="signup-form">
+                <!--sign up form-->
+                <h2>Cambiar contraseña</h2>
+                <h3>{{$scope.username}}</h3>
+                <form name="registroUsuario" ng-submit="changePassword(newPass)">
+                    <h4>Introduce la nueva contraseña</h4>
+                    <input type="password" placeholder="Contraseña" ng-model="newPass.password" />
+                    <h4>Vuelve a insertar la contraseña</h4>
+                    <input type="password" placeholder="Contraseña" ng-model="newPass.password2" />
+                    <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Cambiar la contraseña</button>
+                </form>
             </div>
+            <!--/sign up form-->
         </div>
     </section>
     <!--/form-->

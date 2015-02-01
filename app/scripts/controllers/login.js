@@ -90,10 +90,25 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
 //creamos el controlador pasando $scope y auth
 nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) {
     //devolvemos a la vista el nombre del usuario
+    $scope.users = users;
     $scope.username = $cookies.username;
     $scope.password = $cookies.password;
     //la función logout que llamamos en la vista llama a la función
     //logout de la factoria auth
+    $scope.changePassword = function (pass) {
+        var valido = false;
+        if (pass.password == pass.password2) {
+            valido = true;
+        }
+        if (valido == true) {
+            angular.forEach($scope.users.items, function (item) {
+                if ((item.username == $cookies.username)) {
+                    item.password = pass.password;
+                }
+            })
+        }
+        alert("contraseña cambiada");
+    }
     $scope.logout = function () {
         auth.logout();
         alert("sesion cerrada");
