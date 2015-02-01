@@ -33,7 +33,10 @@
 --hacer que se muestren los productos correctos al hacer click
 
 ----------------carrito----------
---botones añadir al carrito(amanda)
+--botones añadir al carrito<<amanda>>
 
 -------------productos  y recomendados-----
 --sacarlos de la base de datos
+
+-----carrito----
+--¿Que pasa cuando se le da a continuar?
