@@ -20,7 +20,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
         },
         checkStatus: function () {
             //creamos un array con las rutas que queremos controlar
-            var rutasPrivadas = ["/index", "/login"];
+            var rutasPrivadas = ["/cuenta"];
             if (this.in_array($location.path(), rutasPrivadas) && typeof ($cookies.username) == "undefined") {
                 $location.path("/login");
             }
@@ -64,6 +64,7 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             alert("Error contraseña o usuario incorrecto");
         } else {
             auth.login($scope.username, $scope.password);
+            alert("Sesion iniciada");
         }
     }
     $scope.addUser = function (userDetails) {
@@ -95,6 +96,7 @@ nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) 
     //logout de la factoria auth
     $scope.logout = function () {
         auth.logout();
+        alert("sesion cerrada");
     }
 
 });

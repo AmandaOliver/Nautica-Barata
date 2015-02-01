@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cuenta | E-Shopper</title>
+
+</head>
+<!--/head-->
+
+<body>
+    <section id="form">
+        <!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <!--/login form-->
+                </div>
+                <div class="col-sm-4">
+                    <div class="signup-form">
+                        <!--sign up form-->
+                        <h2>Nuevo usuario Registrate!</h2>
+                        <form name="registroUsuario" ng-submit="addUser(newUser)">
+                            <input type="text" placeholder="Nombre" ng-model="newUser.username" />
+                            <input type="password" placeholder="Contraseña" ng-model="newUser.password" />
+                            <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
+                        </form>
+                    </div>
+                    <!--/sign up form-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/form-->
+
+
+</body>
+
+</html>

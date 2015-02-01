@@ -13,6 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <!-- endbuild -->
+    <link href="styles/varios.css">
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="styles/font-awesome.min.css" rel="stylesheet">
     <link href="styles/prettyPhoto.css" rel="stylesheet">
@@ -75,7 +76,14 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href=""><i class="fa fa-user"></i> Cuenta</a>
+                                <li ng-controller="homeController">
+                                    <a href="" class="boton" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Cuenta</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#Cuenta"><i class="fa fa-user"></i> Administrar Cuenta</a>
+                                        </li>
+                                        <li ng-click="logout()"><a href=""><i class="fa fa-lock"></i>Cerrar Sesion</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li><a href="#cart"><i class="fa fa-shopping-cart"></i> Carrito</a>
                                 </li>
