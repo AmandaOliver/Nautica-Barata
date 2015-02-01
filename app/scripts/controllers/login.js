@@ -20,8 +20,9 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
         },
         checkStatus: function () {
             //creamos un array con las rutas que queremos controlar
-            var rutasPrivadas = ["/cuenta"];
+            var rutasPrivadas = ["/Cuenta"];
             if (this.in_array($location.path(), rutasPrivadas) && typeof ($cookies.username) == "undefined") {
+                alert("Para administrar la cuenta tienes que iniciar sesion");
                 $location.path("/login");
             }
             //en el caso de que intente acceder al login y ya haya iniciado sesión lo mandamos a la home
