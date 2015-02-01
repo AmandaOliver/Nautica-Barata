@@ -6,21 +6,9 @@
  DESCARGAR: https://www.dropbox.com/sh/i6a07wkqhr57fs9/AACRAh7pU5m5fRozuQfh0cFCa?dl=0
  
  
- 
- 
- 
-------------------Información enlazada por el footer-----------------
-
---vista de condiciones generales ( copiar texto del footer de la pagina original de nautica barata ) y enlazarlo con el footer<<Antonio>>
---vista de politica de privacidad ( copiar texto del footer de la pagina original de nautica barata, menos el ultimo párrafo ) y enlazarlo con el footer<<Antonio>>
---vista de horario comercial ( copiar texto del footer de la pagina original de nautica barata) y enlazarlo con el footer <<Antonio>>
---vista de condiciones de envío ( copiar texto del footer de la pagina original de nautica barata) y enlazarlo con el footer <<Antonio>>
-
-----------------404----------------
---Poner bien el archivo 404.html
 
 ----------------index.html app----------------
---implementar la funcionalidad del cuadradito de search (y ya de paso poner search en español)(antonio)
+--implementar la funcionalidad del cuadradito de search (y ya de paso poner search en español)
 
 ----------------base de datos---------
 --rellenar base de datos
@@ -31,9 +19,6 @@
 ----------------implementar botones categorias-------
 --sacar categorias de la base de datos
 --hacer que se muestren los productos correctos al hacer click
-
-----------------carrito----------
---botones añadir al carrito<<amanda>>
 
 -------------productos  y recomendados-----
 --sacarlos de la base de datos
