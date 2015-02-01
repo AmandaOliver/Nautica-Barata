@@ -75,6 +75,10 @@ nauticaBarataApp.config(function ($routeProvider) {
             templateUrl: 'views/condiciones-generales.html',
             controller: ''
         })
+        .when('/Cuenta', {
+            templateUrl: 'views/cuenta.html',
+            controller: 'homeController'
+        })
         .otherwise({
             redirectTo: '/'
         });

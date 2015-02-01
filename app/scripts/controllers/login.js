@@ -9,7 +9,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
             $cookies.username = username,
             $cookies.password = password;
             //mandamos a la home
-            $location.path("/idex");
+            $location.path("/login");
         },
         logout: function () {
             //al hacer logout eliminamos la cookie con $cookieStore.remove
@@ -20,7 +20,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
         },
         checkStatus: function () {
             //creamos un array con las rutas que queremos controlar
-            var rutasPrivadas = ["/index", "/login"];
+            var rutasPrivadas = ["/cuenta"];
             if (this.in_array($location.path(), rutasPrivadas) && typeof ($cookies.username) == "undefined") {
                 $location.path("/login");
             }
@@ -41,13 +41,12 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
     }
 });
 
-var users = {};
 nauticaBarataApp.run(function ($http) {
     $http.get("scripts/users.json").success(function (data) {
         users.items = data;
     });
 });
-
+var users = {};
 //creamos el controlador pasando $scope y $http, así los tendremos disponibles
 nauticaBarataApp.controller('loginController', function ($scope, auth) {
     //la función login que llamamos en la vista llama a la función
@@ -57,7 +56,7 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
     $scope.login = function () {
         var encontrado = false;
         angular.forEach($scope.users.items, function (item) {
-            if ((item.usuario == $scope.username) && (item.password == $scope.password)) {
+            if ((item.username == $scope.username) && (item.password == $scope.password)) {
                 encontrado = true;
             }
         })
@@ -65,18 +64,28 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             alert("Error contraseña o usuario incorrecto");
         } else {
             auth.login($scope.username, $scope.password);
+            alert("Sesion iniciada");
         }
     }
     $scope.addUser = function (userDetails) {
-        users.items.push({
-            username: userDetails.username,
-            email: userDetails.email,
-            password: userDetails.password
-
-        });
+        var valido = true;
+        angular.forEach($scope.users.items, function (item) {
+            if ((item.username == userDetails.username)) {
+                valido = false;
+            }
+        })
+        if (valido == true) {
+            users.items.push({
+                username: userDetails.username,
+                password: userDetails.password
+            });
+            alert("registrado con existo");
+        }
+        if (valido == false) {
+            alert("El usuario ya existe");
+        }
     };
 });
-
 
 //creamos el controlador pasando $scope y auth
 nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) {
@@ -87,6 +96,7 @@ nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) 
     //logout de la factoria auth
     $scope.logout = function () {
         auth.logout();
+        alert("sesion cerrada");
     }
 
 });
