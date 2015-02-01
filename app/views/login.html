@@ -39,6 +39,8 @@
                         <h2>Nuevo usuario Registrate!</h2>
                         <form name="registroUsuario" ng-submit="addUser(newUser)">
                             <input type="text" placeholder="Nombre" ng-model="newUser.username" />
+                            <div ng-show="valido"><font color="red">El usuario ya existe</font>
+                            </div>
                             <input type="password" placeholder="Contraseña" ng-model="newUser.password" />
                             <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
                         </form>

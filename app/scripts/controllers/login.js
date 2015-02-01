@@ -83,7 +83,7 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             alert("registrado con existo");
         }
         if (valido == false) {
-            alert("El usuario ya existe");
+            $scope.valido = true;
         }
     };
 });
