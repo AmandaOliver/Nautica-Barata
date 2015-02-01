@@ -67,11 +67,22 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
         }
     }
     $scope.addUser = function (userDetails) {
-        users.items.push({
-            username: userDetails.username,
-            password: userDetails.password
-        });
-        alert("registrado con existo");
+        var valido = true;
+        angular.forEach($scope.users.items, function (item) {
+            if ((item.username == userDetails.username)) {
+                valido = false;
+            }
+        })
+        if (valido == true) {
+            users.items.push({
+                username: userDetails.username,
+                password: userDetails.password
+            });
+            alert("registrado con existo");
+        }
+        if (valido == false) {
+            alert("El usuario ya existe");
+        }
     };
 });
 
