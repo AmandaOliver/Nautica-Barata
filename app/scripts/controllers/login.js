@@ -9,7 +9,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
             $cookies.username = username,
             $cookies.password = password;
             //mandamos a la home
-            $location.path("/login");
+            $location.path("/index");
         },
         logout: function () {
             //al hacer logout eliminamos la cookie con $cookieStore.remove
@@ -56,13 +56,14 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
     $scope.users = users;
     $scope.login = function () {
         var encontrado = false;
+        $scope.encontrado = false;
         angular.forEach($scope.users.items, function (item) {
             if ((item.username == $scope.username) && (item.password == $scope.password)) {
                 encontrado = true;
             }
         })
         if (encontrado == false) {
-            alert("Error contraseña o usuario incorrecto");
+            $scope.encontrado = true;
         } else {
             auth.login($scope.username, $scope.password);
             alert("Sesion iniciada");
