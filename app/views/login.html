@@ -26,7 +26,7 @@
                                 <input type="password" placeholder="Contraseña" id="password" ng-model="password" />
                                 <div ng-show="encontrado"><font color="red">Usuario o contraseña incorrecto</font>
                                 </div>
-                                <button type="submit" ng-disabled="!InicioSesion.$valid" ng-click="login(username,password)" class="btn btn-default">Iniciar sesión</button>
+                                <button type="submit" ng-disabled="!InicioSesion.$valid" ng-click="login(username,password)" class="btn btn-default" onclick="window.location.reload()">Iniciar sesión</button>
                             </fieldset>
                         </form>
                     </div>

@@ -81,13 +81,15 @@
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="#Cuenta"><i class="fa fa-user"></i> Administrar Cuenta</a>
                                         </li>
-                                        <li ng-click="logout()"><a href=""><i class="fa fa-lock"></i>Cerrar Sesion</a>
+                                        <li ng-click="logout()" onclick="window.location.reload()"><a href=""><i class="fa fa-lock"></i>Cerrar Sesion</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li><a href="#cart"><i class="fa fa-shopping-cart"></i> Carrito</a>
                                 </li>
                                 <li><a href="#login"><i class="fa fa-lock"></i> Inicia Sesión</a>
+                                    <div ng-controller="homeController"><font color="grey">Usuario: {{username}}</font>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -142,7 +144,7 @@
     <div class="panel-body">
         <hr>
         <ul class="list-group">
-           <!--SACAR PRODUCTOS DE LA BD <li class="list-group-item list-group-item-warning" ng-repeat="profesor in profesores.items | filter:busqueda ">
+            <!--SACAR PRODUCTOS DE LA BD <li class="list-group-item list-group-item-warning" ng-repeat="profesor in profesores.items | filter:busqueda ">
 
             </li>-->
         </ul>

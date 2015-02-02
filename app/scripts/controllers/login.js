@@ -15,6 +15,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
             //al hacer logout eliminamos la cookie con $cookieStore.remove
             $cookieStore.remove("username"),
             $cookieStore.remove("password");
+            $scope.username = $cookies.username;
             //mandamos al login
             $location.path("/login");
         },
@@ -66,7 +67,6 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             $scope.encontrado = true;
         } else {
             auth.login($scope.username, $scope.password);
-            alert("Sesion iniciada");
         }
     }
     $scope.addUser = function (userDetails) {
@@ -113,9 +113,7 @@ nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) 
     }
     $scope.logout = function () {
         auth.logout();
-        alert("sesion cerrada");
     }
-
 });
 
 
