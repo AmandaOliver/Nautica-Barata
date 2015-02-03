@@ -7,21 +7,53 @@
  
  
 
-----------------index.html app----------------
---implementar la funcionalidad del cuadradito de search (y ya de paso poner search en español)
+Amanda:
 
-----------------base de datos---------
---rellenar base de datos
---terminar parte de categorias (diego)
---hacer parte de productos
---hacer parte de productos recomendados.
+—…Documentación
 
-----------------implementar botones categorias-------
---sacar categorias de la base de datos
---hacer que se muestren los productos correctos al hacer click
+—…Heroku
 
--------------productos  y recomendados-----
---sacarlos de la base de datos
+—…Comentarios
 
------carrito----
---¿Que pasa cuando se le da a continuar?
+—…Carpeta con fotos
+
+—…Grunt
+
+—…Pruebas
+
+—…Json con la info de los productos
+
+—Adaptación de plantilla a nuestra aplicación 
+
+—Estilo de la página
+
+—Carrito
+
+
+
+Diego:
+
+—…Base de datos: métodos mostrar productos según categoría, mostrar productos, métodos sacar o meter elementos en el carrito de un usuario.
+
+—Adaptación de plantilla a nuestra aplicación
+
+—…Comentarios
+
+
+Antonio:
+
+—…Búsqueda
+
+—…Carrito de usuarios
+
+—…Comentarios
+
+—…Contacto
+
+—Control de usuarios
+
+—Vistas del footer
+
+—Routeo
+
+—Adaptación de plantilla a nuestra aplicación 
