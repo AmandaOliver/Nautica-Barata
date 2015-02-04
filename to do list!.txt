@@ -37,13 +37,13 @@ Amanda:
 
 —…Comentarios
 
-—…Carpeta con fotos
-
 —…Grunt
 
 —…Pruebas
 
-—…Json con la info de los productos
+-Carpeta con fotos
+
+—Json con la info de los productos
 
 —Adaptación de plantilla a nuestra aplicación 
 
