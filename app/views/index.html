@@ -61,7 +61,7 @@
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
-                                    <div class="productinfo text-center" ng-repeat="produ in productos">
+                                    <div class="productinfo text-center" ng-repeat="produ in productos | filter:'RECOMENDADO'">
                                         <img src={{produ.imagen}} alt="" />
                                         <h2>${{produ.precio}}</h2>
                                         <p>{{produ.nombre}}</p>
