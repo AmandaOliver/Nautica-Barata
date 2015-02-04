@@ -1,14 +1,14 @@
 //MODULO PARA CONTROLAR LAS CATEGORIAS
 
-    nauticaBarataApp.factory('categoria', function($resource) {
+    nauticaBarataApp.factory('getCategoria', function($resource) {
         var Categorias =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/categorias/', {
             apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
             id: 'DiegoManuel'
-        });
+            });
 
     return Categorias;
 
-})
+});
 
      nauticaBarataApp.factory('carrito', function($resource) {
         var Carrito =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/carrito/', {
@@ -18,7 +18,7 @@
 
     return Carrito;
 
-})
+});
 
      nauticaBarataApp.factory('productos', function($resource) {
         var Productos =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/producto/', {
@@ -28,7 +28,7 @@
 
     return Producto;
 
-})
+});
 
 
     //Controladores
@@ -36,7 +36,7 @@
                 $scope.categorias = Categorias.query({});
 
                 //Aqui se añadirian funciones para añadir y quitar categorias
-})
+});
 
      nauticaBarataApp.controller('CarritoCtrl', function ($scope, Carrito) {
 
@@ -49,7 +49,7 @@
                 $scope.eliminarCarrito = function(prod){
                     prod.$remove();
                 };
-})
+});
 
      nauticaBarataApp.controller('ProductoCtrl', function ($scope, Producto) {
 
@@ -62,7 +62,7 @@
                 $scope.eliminarCarrito = function(prod){
                     prod.$remove();
                 };
-})
+});
 
 
      nauticaBarataApp.controller('UsuariosCtrl', function ($scope, Usuarios) {
