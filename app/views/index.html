@@ -21,9 +21,11 @@
                             <!--categoria-->
                             <div class="panel panel-default">
 
-                          <!--Esto no funciona y no se por que... cuando se ejecuta la pagina dice un error referente al controlador -->
+
                           <div class="panel-heading" ng-controller='CategoriasCtrl'>
-                                    <h4 class="panel-title"><a ng-repeat="cat in categorias" href={{cat.url}}>{{cat.nombre}}</a></h4>
+                                    <select ng-model="filtroCat" ng-repeat="cat in categorias">
+                                        <option value="Categoria" selected>{{cat.nombre}}</option>
+                                    </select>
                                </div>
                             </div>
 
@@ -32,19 +34,19 @@
                     </div>
                 </div>
 
-                <div class="col-sm-9 padding-right">
+                <div class="col-sm-9 padding-right" ng-controller="ProductoCtrl">
                     <div class="features_items">
                         <!--productos-->
                         <h2 class="title text-center">Productos</h2>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" ng-controller="ProductoCtrl">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
-                                    <div class="productinfo text-center" >
-                                        <!-- SACAR PRODUCTOS DE LA BASE DE DATOS-->
-                                        <img src="assets/images/home/product1.jpg" alt="" />
-                                        <h2>$56</h2>
-                                        <p>Easy Polo Black Edition</p>
-                                        <ngcart-addtocart id="otro" name="otro" price="5" quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
+                                   <!--Se filtran los productos a mostrar según la categoría elegida-->
+                                    <div class="productinfo text-center" ng-repeat="prod in productos | filter:filtroCat">
+                                        <img src="{{prod.imagen}}" alt="" />
+                                        <h2>${{prod.precio}}</h2>
+                                        <p>{{prod.nombre}}</p>
+                                        <ngcart-addtocart id="otro" name="otro" price={{prod.precio}} quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
                                     </div>
                                 </div>
 
@@ -59,13 +61,11 @@
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
-                                    <div class="productinfo text-center" >
-                                       <!--
-                                        SACAR RECOMENDADOS DE LA BASE DE DATOS-->
-                                        <img src="assets/images/home/recommend1.jpg" alt="" />
-                                        <h2>$56</h2>
-                                        <p>Easy Polo Black Edition</p>
-                                        <ngcart-addtocart id="producto" name="producto" price="1" quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
+                                    <div class="productinfo text-center" ng-repeat="produ in productos">
+                                        <img src={{produ.imagen}} alt="" />
+                                        <h2>${{produ.precio}}</h2>
+                                        <p>{{produ.nombre}}</p>
+                                        <ngcart-addtocart id="producto" name="producto" price={{produ.precio}} quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
                                     </div>
 
                                 </div>

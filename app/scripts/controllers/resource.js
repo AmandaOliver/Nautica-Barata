@@ -1,6 +1,4 @@
-//MODULO PARA CONTROLAR LAS CATEGORIAS
-
-    nauticaBarataApp.factory('getCategoria', function($resource) {
+    nauticaBarataApp.factory('categoria', function($resource) {
         var Categorias =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/categorias/', {
             apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
             id: 'DiegoManuel'
@@ -35,7 +33,6 @@
     nauticaBarataApp.controller('CategoriasCtrl', function ($scope, Categorias) {
                 $scope.categorias = Categorias.query({});
 
-                //Aqui se añadirian funciones para añadir y quitar categorias
 });
 
      nauticaBarataApp.controller('CarritoCtrl', function ($scope, Carrito) {
@@ -53,7 +50,7 @@
 
      nauticaBarataApp.controller('ProductoCtrl', function ($scope, Producto) {
 
-                $scope.producto = Productos.query({});
+                $scope.productos = Productos.query({});
 
                 $scope.agregarProducto = function(prod){
                     prod.$save();
