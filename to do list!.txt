@@ -1,5 +1,7 @@
  
- 
+NOTAS:
+-¿Como vamos a llevar el control de usuarios? desde la base de datos o desde un fichero json?
+-Necesitamos la vista añadir producto
  
  
  
