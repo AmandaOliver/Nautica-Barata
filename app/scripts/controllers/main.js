@@ -45,7 +45,7 @@ nauticaBarataApp.config(function ($routeProvider) {
         })
         .when('/product-details', {
             templateUrl: 'views/product.html',
-            controller: ''
+            controller: 'prodCtrl'
         })
         .when('/blog-single', {
             templateUrl: 'views/blog-single.html',
