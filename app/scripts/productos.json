@@ -4,104 +4,104 @@
         "nombre": "ropa de agua talla XS",
         "precio": "186,34",
         "descripción": "CHAQUETA DE AGUA : 100% impermeable, pvc 20%, poliéster 80%, Cotton 600g. Extra resistente al frío y al moho. Capucha con ceñidor. Reflectante en capucha y frontal, ojales para adaptar chalecos hinchables, cremallera frontal y tapeta 10 YKK Derlin .Zipper de doble dirección. Costuras selladas, doble puño, refuerzo en codos, y espalda. Cremallera interna para forro polar. Forro interior auto drenaje de seguridad. PANTALÓN DE AGUA PETO: 100% impermeable, pvc 20%, poliéster 80%, Cotton 600g. Extra resistente al frío y al moho. Cremallera frontal y tapeta 10 YKK Derlin Zipper de doble dirección. Costuras selladas, refuerzo en asiento y rodillas. Forro interior auto drenaje de seguridad. POLAR GS DESMONTABLE: % Poliester / Crafter forro / 320g / 2 bolsillos frontales con cierre de cremallera / 2 bolsillos interiores hondos/ Forro interior 100% Nylon en mangas / Puños elásticos / Opción desmontable con cremallera para combinar con chaqueta GS.",
-        "imagen": "app/images/ropa_1.jpg"
+        "imagen": "images/ropa_1.jpg"
     },
     {
         "categoria": "ropa",
         "nombre": "bota de agua GS MARINE talla 38",
         "precio": "37,51",
         "descripción": "Bota de caña alta para uso náutico. Impermeable y muy cómoda, con costuras reforzadas y suela antideslizante PVC. Color Azul. RECOMENDADO",
-        "imagen": "app/images/ropa_2.JPG"
+        "imagen": "images/ropa_2.jpg"
     },
     {
         "categoria": "ropa",
         "nombre": "Chaqueta HELLY HANSEN talla S",
         "precio": "45,53",
         "descripción": "100% impermeable / Punto de poliéster con coating de poliuretano / 180 g. /2 bolsillos frontales con solapa / Capucha plegable en el cuello / Espalda más larga / Cierre de corchetes en mangas. Color azul.",
-        "imagen": "app/images/ropa_3.JPEG"
+        "imagen": "images/ropa_3.jpg"
     },
     {
         "categoria": "Acastillaje",
         "nombre": "Cojinete de anclas.",
         "precio": "108,90",
         "descripción": "Cojinete de ancla basculante en inox. Largo total: 275 mm. Base: 150 mm. Alto: 75 mm. Ancho: 80 mm",
-        "imagen": "app/images/acastillaje_1.JPG"
+        "imagen": "images/acastillaje_1.jpg"
     },
     {
         "categoria": "Acastillaje",
         "nombre": "Cornamusa inox.",
         "precio": "4,37",
         "descripción": "Cornamusa de inox. Esta cornamusa es la mas instalada por los distintos astilleros, pues tiene una buena relación calidad-precio ofreciendo un anclaje robusto al estar unida a la cubierta con cuatro tornillos cuando lo habitual es anclarla con dos tornillos en linea.",
-        "imagen": "app/images/acastillaje_2.JPG"
+        "imagen": "images/acastillaje_2.jpg"
     },
     {
         "categoria": "Acastillaje",
         "nombre": "Cornamusa de nylon negra.",
         "precio": "1,13",
         "descripción": "Cornamusa de nylon negra desde 80 mm de longitud hasta 300.Recomendada para pequeñas embarcaciones o para maniobras de drizas y escotas de pequeños veleros. RECOMENDADO",
-        "imagen": "app/images/acastillaje_3.JPG"
+        "imagen": "images/acastillaje_3.jpg"
     },
     {
         "categoria": "Acastillaje Vela",
         "nombre": "Veleta WINDEX",
         "precio": "35,76",
         "descripción": "Veleta WINDEX de montaje horizontal, para tope de palo, de 250 mm de longitud.",
-        "imagen": "app/images/acastillaje_vela_1.JPG"
+        "imagen": "images/acastillaje_vela_1.jpg"
     },
     {
         "categoria": "Acastillaje Vela",
         "nombre": "Wiches LEWMAR mod. STANDARD",
         "precio": "161,92",
         "descripción": "Modelo: 6, Kg: 0,5, Diametro del tambor: 59 mm, Diametro de la base: 94 mm, Altura : 83 mm, Altura de entrada del cabo: 35,5 mm, Acabado: Aluminio, Velocidades: 1 RECOMENDADO",
-        "imagen": "app/images/acastillaje_vela_2.JPG"
+        "imagen": "images/acastillaje_vela_2.jpg"
     },
     {
         "categoria": "Acastillaje Vela",
         "nombre": "Mordaza LEWMAR para cabo de 4 a 12 mm.",
         "precio": "25,01",
         "descripción": "Mordaza LEWMAR para cabo  de 4 a 12 mm.",
-        "imagen": "app/images/acastillaje_vela_3.JPG"
+        "imagen": "images/acastillaje_vela_3.jpg"
     },
     {
         "categoria": "Confort",
         "nombre": "Barbacoa Horno de carbón, 381mm, Magma",
         "precio": "173,03",
         "descripción": "Barbacoa carbon Inox 381mm Tapa de protección, Diámetro: 381 mm. INOX.   CE",
-        "imagen": "app/images/confort_1.JPG"
+        "imagen": "images/confort_1.jpg"
     },
     {
         "categoria": "Confort",
         "nombre": "Pasarela rígida reforzada de 3,5 mtos.",
         "precio": "691,56",
         "descripción": "Pasarela rígida reforzada con paso en plancha de aluminio anodizado antideslizante. Disponibilidad de rueda y tintero de recambio. Longitud: 3,5 metros. Ancho: 420 mm. Peso: 21 Kg.",
-        "imagen": "app/images/confort_2.JPG"
+        "imagen": "images/confort_2.jpg"
     },
     {
         "categoria": "Confort",
         "nombre": "Escaleras de baño",
         "precio": "37,88",
         "descripción": "Escaleras de baño, de todos los tipos, fijas, abatibles, de aluminio, de inox, para neumáticas, etc.. RECOMENDADO",
-        "imagen": "app/images/confort_3.JPG"
+        "imagen": "images/confort_3.jpg"
     },
     {
         "categoria": "Electricidad",
         "nombre": "Interruptor de 100 Ah (plástico)",
         "precio": "13,13",
         "descripción": "Interruptores de baterías para un solo banco. ",
-        "imagen": "app/images/electricidad_1.JPG"
+        "imagen": "images/electricidad_1.jpg"
     },
     {
         "categoria": "Electricidad",
         "nombre": "Desconectador de baterías de rueda.",
         "precio": "28,88",
         "descripción": "Interruptor de batería,estanco para el uso de 1 ó 2 baterías. Diametro: 140 mm. Altura: 67 mm. Voltios: 12 Amp. continuos: 230 Ah. Amp. intermitente: 300 Ah. ",
-        "imagen": "app/images/electricidad_2.JPG"
+        "imagen": "images/electricidad_2.jpg"
     },
     {
         "categoria": "Electricidad",
         "nombre": "Aisladores de baterías.",
         "precio": "90,75",
         "descripción": "Baterías: 3. Alternadores: 2. Voltios: 12-48. Amperios: 300 (3 x 100). Dimensiones: 200x120x80 mm",
-        "imagen": "app/images/electricidad_3.JPG"
+        "imagen": "images/electricidad_3.jpg"
     }
 ]
