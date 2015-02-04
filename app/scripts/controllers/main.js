@@ -31,6 +31,10 @@ nauticaBarataApp.config(function ($routeProvider) {
             templateUrl: 'views/checkout.html',
             controller: ''
         })
+        .when('/venta', {
+            templateUrl: 'views/venta.html',
+            controller: 'homeController'
+        })
         .when('/login', {
             templateUrl: 'views/login.html',
             controller: 'loginController'
