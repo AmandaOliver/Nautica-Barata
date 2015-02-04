@@ -1,7 +1,13 @@
  
 NOTAS:
--¿Como vamos a llevar el control de usuarios? desde la base de datos o desde un fichero json?
--Necesitamos la vista añadir producto
+-He dejado cargados en la base de datos un ejemplo de json en cada tabla.
+-¿Como vamos a llevar el control de usuarios, desde la base de datos o desde un fichero json?
+-Necesitamos la vista añadir producto.
+-¿Es necesario tener una tabla de recomendados? ¿No basta con un atributo recomendado en el producto y filtrar?
+ 
+-Lo que me queda de trabajo es descubrir por que no funciona el controlador de las categorías.
+ Cuando se descubra necesitamos una vista para control de productos y recomendados (añadir, eliminar...). Simplemente habría que añadir 
+ un formulario y poner un ng-click llamando a la función correspondiente que ya he implementado pasóndole como parámetro el propio producto.
  
  
  

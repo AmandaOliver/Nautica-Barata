@@ -30,16 +30,6 @@ angular.module('recursos', ['ngResource'])
 
 })
 
-    .factory('recomendados', function($resource) {
-        var Recomendados =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/recomendados/', {
-            apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
-            id: 'DiegoManuel'
-        });
-
-    return Recomendados;
-
-})
-
 
     //Controladores
     .controller('CategoriasCtrl', function ($scope, Categorias) {
@@ -74,18 +64,6 @@ angular.module('recursos', ['ngResource'])
                 };
 })
 
-  .controller('RecomendadosCtrl', function ($scope, Recomendados) {
-
-                $scope.recomendados = Recomendados.query({});
-
-                $scope.agregarRecomendado = function(prod){
-                    prod.$save();
-                };
-
-                $scope.eliminarRecomendado = function(prod){
-                    prod.$remove();
-                };
-})
 
     .controller('UsuariosCtrl', function ($scope, Usuarios) {
 
