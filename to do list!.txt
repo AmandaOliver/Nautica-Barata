@@ -13,7 +13,9 @@ NOTAS:
  
 -Lo que me queda de trabajo es descubrir por que no funciona el controlador de las categorías.
 
------mirate esto: https://github.com/pkozlowski-opensource/angularjs-mongolab
+-----mirate esto: 
+http://stackoverflow.com/questions/12339272/angular-js-unknown-provider
+https://github.com/pkozlowski-opensource/angularjs-mongolab
 
 
  Cuando se descubra necesitamos una vista para control de productos y recomendados (añadir, eliminar...). Simplemente habría que añadir 
