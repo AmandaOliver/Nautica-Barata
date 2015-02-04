@@ -22,9 +22,9 @@
                             <div class="panel panel-default">
 
 
-                          <div class="panel-heading" ng-controller='CategoriasCtrl'>
-                                    <select ng-model="filtroCat" ng-repeat="cat in categorias">
-                                        <option value="Categoria" selected>{{cat.nombre}}</option>
+                          <div class="panel-heading" ng-controller="CategoriasCtrl">
+                                    <select ng-model="filtroCat">
+                                        <option ng-repeat="cat in categorias" value="Categoria">{{cat.nombre}}</option>
                                     </select>
                                </div>
                             </div>
