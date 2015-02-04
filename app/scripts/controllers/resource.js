@@ -1,6 +1,6 @@
 //MODULO PARA CONTROLAR LAS CATEGORIAS
-angular.module('recursos', ['ngResource'])
-    .factory('categoria', function($resource) {
+
+    nauticaBarataApp.factory('categoria', function($resource) {
         var Categorias =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/categorias/', {
             apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
             id: 'DiegoManuel'
@@ -10,7 +10,7 @@ angular.module('recursos', ['ngResource'])
 
 })
 
-    .factory('carrito', function($resource) {
+     nauticaBarataApp.factory('carrito', function($resource) {
         var Carrito =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/carrito/', {
             apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
             id: 'DiegoManuel'
@@ -20,7 +20,7 @@ angular.module('recursos', ['ngResource'])
 
 })
 
-    .factory('productos', function($resource) {
+     nauticaBarataApp.factory('productos', function($resource) {
         var Productos =  $resource('https://api.mongolab.com/api/1/databases/nautica/collections/producto/', {
             apiKey: 'T7WNQT6J_A_tcu-F2O7TzNTrhPYVdlkA ',
             id: 'DiegoManuel'
@@ -32,13 +32,13 @@ angular.module('recursos', ['ngResource'])
 
 
     //Controladores
-    .controller('CategoriasCtrl', function ($scope, Categorias) {
+    nauticaBarataApp.controller('CategoriasCtrl', function ($scope, Categorias) {
                 $scope.categorias = Categorias.query({});
 
                 //Aqui se añadirian funciones para añadir y quitar categorias
 })
 
-    .controller('CarritoCtrl', function ($scope, Carrito) {
+     nauticaBarataApp.controller('CarritoCtrl', function ($scope, Carrito) {
 
                 $scope.carrito = Carrito.query({});
 
@@ -51,7 +51,7 @@ angular.module('recursos', ['ngResource'])
                 };
 })
 
-    .controller('ProductoCtrl', function ($scope, Producto) {
+     nauticaBarataApp.controller('ProductoCtrl', function ($scope, Producto) {
 
                 $scope.producto = Productos.query({});
 
@@ -65,7 +65,7 @@ angular.module('recursos', ['ngResource'])
 })
 
 
-    .controller('UsuariosCtrl', function ($scope, Usuarios) {
+     nauticaBarataApp.controller('UsuariosCtrl', function ($scope, Usuarios) {
 
                 $scope.usuarios = Usuarios.query({});
 
