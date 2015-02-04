@@ -10,7 +10,7 @@
         "categoria": "ropa",
         "nombre": "bota de agua GS MARINE talla 38",
         "precio": "37,51",
-        "descripción": "Bota de caña alta para uso náutico. Impermeable y muy cómoda, con costuras reforzadas y suela antideslizante PVC. Color Azul.",
+        "descripción": "Bota de caña alta para uso náutico. Impermeable y muy cómoda, con costuras reforzadas y suela antideslizante PVC. Color Azul. RECOMENDADO",
         "imagen": "app/images/ropa_2.JPG"
     },
     {
@@ -38,7 +38,7 @@
         "categoria": "Acastillaje",
         "nombre": "Cornamusa de nylon negra.",
         "precio": "1,13",
-        "descripción": "Cornamusa de nylon negra desde 80 mm de longitud hasta 300.Recomendada para pequeñas embarcaciones o para maniobras de drizas y escotas de pequeños veleros.",
+        "descripción": "Cornamusa de nylon negra desde 80 mm de longitud hasta 300.Recomendada para pequeñas embarcaciones o para maniobras de drizas y escotas de pequeños veleros. RECOMENDADO",
         "imagen": "app/images/acastillaje_3.JPG"
     },
     {
@@ -52,7 +52,7 @@
         "categoria": "Acastillaje Vela",
         "nombre": "Wiches LEWMAR mod. STANDARD",
         "precio": "161,92",
-        "descripción": "Modelo: 6, Kg: 0,5, Diametro del tambor: 59 mm, Diametro de la base: 94 mm, Altura : 83 mm, Altura de entrada del cabo: 35,5 mm, Acabado: Aluminio, Velocidades: 1",
+        "descripción": "Modelo: 6, Kg: 0,5, Diametro del tambor: 59 mm, Diametro de la base: 94 mm, Altura : 83 mm, Altura de entrada del cabo: 35,5 mm, Acabado: Aluminio, Velocidades: 1 RECOMENDADO",
         "imagen": "app/images/acastillaje_vela_2.JPG"
     },
     {
@@ -80,7 +80,7 @@
         "categoria": "Confort",
         "nombre": "Escaleras de baño",
         "precio": "37,88",
-        "descripción": "Escaleras de baño, de todos los tipos, fijas, abatibles, de aluminio, de inox, para neumáticas, etc..",
+        "descripción": "Escaleras de baño, de todos los tipos, fijas, abatibles, de aluminio, de inox, para neumáticas, etc.. RECOMENDADO",
         "imagen": "app/images/confort_3.JPG"
     },
     {
