@@ -128,7 +128,7 @@ PONED ESTO BONITO:
 
 ANTONIO -->
 
-<h4>Amanda:</h4><br>
+<h4>Amanda:</h4>
 <ul>
 <li>Encargada de la parte "visual" de la web, estilo, colores, estructura...</li>
 <li>Encargada de la adaptación del módulo ngcart (carrito) a la aplicación, traducción e implementación</li>
@@ -138,7 +138,7 @@ ANTONIO -->
 <li>Encargada de realizar el despliegue en el servidor</li>
 			</ul>
 
-<h4>DIEGO:</h4><br>
+<h4>DIEGO:</h4>
 <ul>
 <li>Encargado de la implementación, implantación y manejo de la base de datos.</li>
 <li>Encargado de redactar la documentación.</li>
