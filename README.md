@@ -143,6 +143,7 @@ El reparto de tareas ha quedado de la siguiente forma:
 
 <h4>AMANDA:</h4>
 <ul>
+<li>Encargada de la creación de toda la estructura de la aplicación</li>
 <li>Encargada de la parte "visual" de la web, estilo, vistas, colores, estructura...</li>
 <li>Encargada de la adaptación del módulo ngcart (carrito) a la aplicación, traducción e implementación</li>
 <li>Encargada de la implementación de la vista Carrito</li>
