@@ -32,10 +32,14 @@
                 <table class="table table-striped">
                     <thead>
                         <tr ng-repeat="item in productos.items | filter:filtrado">
+                            <td>{{item.nombre}}</td>
                             <td>
-                                <img src="{{item.imagen}}" height="125" width="125">
+                                <img src="{{item.imagen}}" height="135" width="135">
                             </td>
                             <td>{{item.precio}}€</td>
+                            <td>
+                                <ngcart-addtocart id="{{item.nombre}}" name="{{item.nombre}}" price="{{item.price}}" quantity="1">Añadir al carrito</ngcart-addtocart>
+                            </td>
                         </tr>
                     </thead>
                 </table>
