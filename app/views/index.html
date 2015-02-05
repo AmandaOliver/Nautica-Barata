@@ -14,70 +14,35 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3" >
+                <div class="col-sm-3">
                     <div class="left-sidebar">
-                        <h2>Categorias</h2>
+                        <h2>Productos</h2>
                         <div class="panel-group category-products" id="accordian">
                             <!--categoria-->
                             <div class="panel panel-default">
-
-
-                          <div class="panel-heading" ng-controller="CategoriasCtrl">
-                                    <select ng-model="filtroCat">
-                                        <option ng-repeat="cat in categorias" value="Categoria">{{cat.nombre}}</option>
-                                    </select>
-                               </div>
+                                <!-- <div class="panel-heading" ng-controller="categoriasCtrl">
+                                    <h4 class="panel-title"><a ng-repeat="cat in categorias" href="#">{{cat.nombre}}</a></h4>
+                                </div>-->
                             </div>
 
                         </div>
                         <!--/categoria-->
                     </div>
                 </div>
-
-                <div class="col-sm-9 padding-right" ng-controller="ProductoCtrl">
-                    <div class="features_items">
-                        <!--productos-->
-                        <h2 class="title text-center">Productos</h2>
-                        <div class="col-sm-4" ng-controller="ProductoCtrl">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                   <!--Se filtran los productos a mostrar según la categoría elegida-->
-                                    <div class="productinfo text-center" ng-repeat="prod in productos | filter:filtroCat">
-                                        <img src="{{prod.imagen}}" alt="" />
-                                        <h2>${{prod.precio}}</h2>
-                                        <p>{{prod.nombre}}</p>
-                                        <ngcart-addtocart id="otro" name="otro" price={{prod.precio}} quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--productos-->
-
-                    <div class="recommended_items">
-                        <!--productos recomendados-->
-                        <h2 class="title text-center">productos recomendados</h2>
-                        <div class="col-sm-4">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center" ng-repeat="produ in productos | filter:'RECOMENDADO'">
-                                        <img src={{produ.imagen}} alt="" />
-                                        <h2>${{produ.precio}}</h2>
-                                        <p>{{produ.nombre}}</p>
-                                        <ngcart-addtocart id="producto" name="producto" price={{produ.precio}} quantity="1"> <i class="fa fa-shopping-cart"></i>Añadir al carrito</ngcart-addtocart>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/recommended_items-->
-
+                <table class="table table-striped">
+                    <thead>
+                        <tr ng-repeat="item in productos.items | filter:filtrado">
+                            <td>
+                                <img src="{{item.imagen}}" height="125" width="125">
+                            </td>
+                            <td>{{item.precio}}€</td>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </section>
+
 
 
 </body>

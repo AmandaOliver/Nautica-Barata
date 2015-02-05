@@ -21,7 +21,7 @@ nauticaBarataApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'views/index.html',
-            controller: ''
+            controller: 'prodCtrl'
         })
         .when('/cart', {
             templateUrl: 'views/cart.html',
