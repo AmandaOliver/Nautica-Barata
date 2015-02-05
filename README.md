@@ -165,7 +165,8 @@ El reparto de tareas ha quedado de la siguiente forma:
 <li>Diferentes tareas en la implementación de Angular (filtrado, selección...)</li>
 </ul>
 
-y la planificación temporal se puede ver en la siguiente imagen
+y la planificación temporal se puede ver en la siguiente imagen:
+
 <img src="app/images/Gantt.png"/>
 
 10.PRUEBAS
