@@ -13,22 +13,27 @@
 
 <body>
     <section id="form">
-        <div class="col-sm-4">
-            <div class="signup-form">
-                <!--sign up form-->
-                <h2>Añadir Producto</h2>
-                <form name="nuevoProd" ng-submit="addProd(newProd)">
-                    <input type="text" placeholder="Categoría" ng-model="newProd.categoria" />
-                    <input type="text" placeholder="Nombre" ng-model="newProd.nombre" />
-                    <div ng-show="valido"><font color="red">El producto existe</font>
+        <!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="signup-form" class="margen">
+                        <!--sign up form-->
+                        <h2>Añadir Producto</h2>
+                        <form name="nuevoProd" ng-submit="addProd(newProd)">
+                            <input type="text" placeholder="Categoría" ng-model="newProd.categoria" />
+                            <input type="text" placeholder="Nombre" ng-model="newProd.nombre" />
+                            <div ng-show="valido"><font color="red">El producto existe</font>
+                            </div>
+                            <input type="number" placeholder="Precio" ng-model="newProd.precio" />
+                            <input type="text" placeholder="Descripcion" ng-model="newProd.descripcion" />
+                            <input type="text" placeholder="Escriba: imagen/nombreimagen" ng-model="newProd.descripcion" />
+                            <button type="submit" ng-disabled="!nuevoProd.$valid" class="btn btn-default">Registrar Producto</button>
+                        </form>
                     </div>
-                    <input type="number" placeholder="Precio" ng-model="newProd.precio" />
-                    <input type="text" placeholder="Descripcion" ng-model="newProd.descripcion" />
-                    <input type="text" placeholder="Escriba: imagen/nombreimagen" ng-model="newProd.descripcion" />
-                    <button type="submit" ng-disabled="!nuevoProd.$valid" class="btn btn-default">Registrar Producto</button>
-                </form>
+                    <!--/sign up form-->
+                </div>
             </div>
-            <!--/sign up form-->
         </div>
     </section>
 </body>
