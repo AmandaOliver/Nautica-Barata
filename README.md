@@ -54,6 +54,7 @@ mediante "$routeProvider", redirigiendo la vista a dónde se desee.
 Para la realización de este proyecto se ha partido de una plantilla de 
 Bootstrap para una tienda electrónica y que ha sido adaptada a nuestras
 necesidades.
+Además se ha implementado el diseño de forma que es Responsive.
 	
 
 4.ANGULAR JS
