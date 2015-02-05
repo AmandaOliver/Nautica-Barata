@@ -128,7 +128,7 @@ PONED ESTO BONITO:
 
 ANTONIO -->
 
-<h4>Amanda:</h4>
+<h4>AMANDA:</h4>
 <ul>
 <li>Encargada de la parte "visual" de la web, estilo, colores, estructura...</li>
 <li>Encargada de la adaptación del módulo ngcart (carrito) a la aplicación, traducción e implementación</li>
