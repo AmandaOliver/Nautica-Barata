@@ -1,29 +1,26 @@
- ----------------------------
-| DOCUMENTACIÓN DEL PROYECTO |
- ----------------------------
+<h1>Documentación de Náutica Barata</h1>
 
 
-ÍNDICE
 
-1................ESTRUCTURA DE FICHEROS
+<h2>ÍNDICE</h2>
+<ol>
+<li>ESTRUCTURA DE FICHEROS</li>
 
-2................MODELO VISTA CONTROLADOR
+<li>MODELO VISTA CONTROLADOR</li>
 
-3................BOOTSTRAP
+<li>BOOTSTRAP</li>
 
-4................ANGULAR JS
+<li>ANGULAR JS</li>
 
-5................PREPROCESADORES
+<li>PREPROCESADORES</li>
 
-6................HEROKU
+<li>HEROKU</li>
 
-7................GIT
+<li>GIT</li>
+<li>PROBLEMAS ENCONTRADOS</li>
+<li>REPARTO DE TAREAS</li>
 
-8................PROBLEMAS ENCONTRADOS
- 
-9................REPARTO DE TAREAS
-
-
+</ol>
 
 1.ESTRUCTURA DE FICHEROS:
 -------------------------
@@ -137,7 +134,7 @@ ANTONIO -->
 
 AMANDA -->
 
-<ul>DIEGO:
+<ul>DIEGO:<br>
 <li>Encargado de la implementación, implantación y manejo de la base de datos.</li>
 <li>Encargado de redactar la documentación.</li>
 <li>Diferentes tareas en la implementación de Angular (filtrado, selección...)</li>
