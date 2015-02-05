@@ -1,5 +1,5 @@
 <h1>Documentación de Náutica Barata</h1>
-
+<a href="http://nauticabarata.esy.es">Enlace al sitio web</a>
 
 
 <h2>ÍNDICE</h2>
@@ -89,10 +89,10 @@ Se ha empleado la versión sass de bootstrap. Y se han cambiado algunos colores 
 
 
 
-6.HEROKU
+6.DESPLIEGUE
 --------
 Se incluyen en el proyecto varios archivos necesarios para el despliegue de la
-aplicación en el servidor Heroku. Estos archivos son Procfile, donde se indica "el punto de entrada" de la web y web.js, archivo necesario para que heroku funcione.
+aplicación en el servidor Heroku. Estos archivos son Procfile, donde se indica "el punto de entrada" de la web y web.js, archivo necesario para que heroku funcione. Sin embargo, por motivos que no conocemos no es posible que la aplicación se vea correctamente en Heroku. Así que la hemos subido al servidor gratuito Hostinger.
 
 
 
