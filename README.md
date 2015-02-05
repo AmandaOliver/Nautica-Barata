@@ -125,8 +125,6 @@ no le perteneciera.
 -------------------
 El reparto de tareas ha quedado de la siguiente forma:
 
-PONED ESTO BONITO:
-
 <h4>ANTONIO:</h4>
 <ul>
 <li>Encargado del "routeo" de la web</li>
@@ -145,7 +143,7 @@ PONED ESTO BONITO:
 
 <h4>AMANDA:</h4>
 <ul>
-<li>Encargada de la parte "visual" de la web, estilo, colores, estructura...</li>
+<li>Encargada de la parte "visual" de la web, estilo, vistas, colores, estructura...</li>
 <li>Encargada de la adaptación del módulo ngcart (carrito) a la aplicación, traducción e implementación</li>
 <li>Encargada de la implementación de la vista Carrito</li>
 <li>Encargada de la implementación de la distribución por categorías de los productos</li>
@@ -158,6 +156,14 @@ PONED ESTO BONITO:
 <li>Encargado de la implementación, implantación y manejo de la base de datos.</li>
 <li>Encargado de redactar la documentación.</li>
 <li>Diferentes tareas en la implementación de Angular (filtrado, selección...)</li>
-			</ul>
+</ul>
 
+10.PRUEBAS
+-----------
+Se han realizado pruebas a las hojas de estilo mediante la web 
+    http://jigsaw.w3.org/css-validator/#validate_by_upload
+siendo todas satisfactorias. (Nosotros apenas hemos tocado los css, mayormente hemos aplicado las clases que éstos formatean).
 
+También se han realizado pruebas a los html mediante esta otra web 
+    http://validator.w3.org/check
+siendo, despues de algunos cambios, también satisfacctorias.
