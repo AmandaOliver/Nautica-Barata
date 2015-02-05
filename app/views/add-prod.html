@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | E-Shopper</title>
+
+</head>
+<!--/head-->
+
+<body>
+    <section id="form">
+        <div class="col-sm-4">
+            <div class="signup-form">
+                <!--sign up form-->
+                <h2>Añadir Producto</h2>
+                <form name="nuevoProd" ng-submit="addProd(newProd)">
+                    <input type="text" placeholder="Categoría" ng-model="newProd.categoria" />
+                    <input type="text" placeholder="Nombre" ng-model="newProd.nombre" />
+                    <div ng-show="valido"><font color="red">El producto existe</font>
+                    </div>
+                    <input type="number" placeholder="Precio" ng-model="newProd.precio" />
+                    <input type="text" placeholder="Descripcion" ng-model="newProd.descripcion" />
+                    <input type="text" placeholder="Escriba: imagen/nombreimagen" ng-model="newProd.descripcion" />
+                    <button type="submit" ng-disabled="!nuevoProd.$valid" class="btn btn-default">Registrar Producto</button>
+                </form>
+            </div>
+            <!--/sign up form-->
+        </div>
+    </section>
+</body>
+
+</html>

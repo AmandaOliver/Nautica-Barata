@@ -26,10 +26,6 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
                 alert("Para administrar la cuenta tienes que iniciar sesion");
                 $location.path("/login");
             }
-            //en el caso de que intente acceder al login y ya haya iniciado sesión lo mandamos a la home
-            if (this.in_array("/login", rutasPrivadas) && typeof ($cookies.username) != "undefined") {
-                $location.path("/index");
-            }
         },
         in_array: function (needle, haystack) {
             var key = '';

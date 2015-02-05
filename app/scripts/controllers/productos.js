@@ -18,6 +18,27 @@ nauticaBarataApp.filter("checkedProd", function () {
     }
 });
 
-nauticaBarataApp.controller('prodCtrl', function ($scope, auth) {
+nauticaBarataApp.controller('prodCtrl', function ($scope) {
     $scope.productos = productos;
+    $scope.addProd = function (prodDetails) {
+        var valido = true;
+        angular.forEach($scope.productos.items, function (item) {
+            if ((item.nombre == prodDetails.nombre)) {
+                valido = false;
+            }
+        })
+        if (valido == true) {
+            users.items.push({
+                categoria: prodDetails.username,
+                nombre: prodDetails.nombre,
+                precio: prodDetails.precio,
+                descripcion: prodDetails.descripcion,
+                imagen: prodDetails.imagen
+            });
+            alert("Producto registrado con existo");
+        }
+        if (valido == false) {
+            $scope.valido = true;
+        }
+    };
 });
