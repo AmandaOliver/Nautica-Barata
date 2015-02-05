@@ -138,9 +138,9 @@ ANTONIO -->
 AMANDA -->
 
 DIEGO :
--Encargado del la implementación, implantación y manejo de la base de datos.
--Encargado de redactar la documentación.
--Diferentes tareas en la implementación de Angular (filtrado, selección...)
+1.Encargado de la implementación, implantación y manejo de la base de datos.
+2.Encargado de redactar la documentación.
+3.Diferentes tareas en la implementación de Angular (filtrado, selección...)
 			
 
 
