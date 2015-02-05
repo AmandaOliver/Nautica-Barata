@@ -17,12 +17,15 @@
             <div class="signup-form">
                 <!--sign up form-->
                 <h2>Añadir Producto</h2>
-                <form name="registroUsuario" ng-submit="addUser(newUser)">
-                    <input type="text" placeholder="Nombre" ng-model="newUser.username" />
-                    <div ng-show="valido"><font color="red">El usuario ya existe</font>
+                <form name="nuevoProd" ng-submit="addProd(newProd)">
+                    <input type="text" placeholder="Categoría" ng-model="newProd.categoria" />
+                    <input type="text" placeholder="Nombre" ng-model="newProd.nombre" />
+                    <div ng-show="valido"><font color="red">El producto existe</font>
                     </div>
-                    <input type="password" placeholder="Contraseña" ng-model="newUser.password" />
-                    <button type="submit" ng-disabled="!registroUsuario.$valid" class="btn btn-default">Registrarse</button>
+                    <input type="number" placeholder="Precio" ng-model="newProd.precio" />
+                    <input type="text" placeholder="Descripcion" ng-model="newProd.descripcion" />
+                    <input type="text" placeholder="Escriba: imagen/nombreimagen" ng-model="newProd.descripcion" />
+                    <button type="submit" ng-disabled="!nuevoProd.$valid" class="btn btn-default">Registrar Producto</button>
                 </form>
             </div>
             <!--/sign up form-->
