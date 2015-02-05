@@ -1,8 +1,16 @@
 <h1>Documentación de Náutica Barata</h1>
-<a href="http://nauticabarata.esy.es">Enlace al sitio web</a>
-Nota: para entrar como administrador y ver el enlace a añadir producto:
-Usuario:administrador
-Contraseña:1234
+<a href="http://nauticabarata.esy.es">Enlace al sitio web</a><br>
+<p>Nota: para entrar como administrador y ver el enlace a añadir producto:</p>
+<ul>
+<li>Usuario:administrador</li>
+<li>Contraseña:1234</li>
+</ul>
+<h3>Componentes del grupo:</h3>
+<ul>
+<li>Antonio Sánchez Roldán</li>
+<li>Amanda Oliver Sánchez</li>
+<li>Diego Mateos Gómez</li>
+</ul>
 
 
 <h2>ÍNDICE</h2>
