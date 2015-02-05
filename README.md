@@ -167,4 +167,4 @@ siendo todas satisfactorias. (Nosotros apenas hemos tocado los css, mayormente h
 
 También se han realizado pruebas a los html mediante esta otra web 
     http://validator.w3.org/check
-siendo, despues de algunos cambios, también satisfacctorias.
+siendo, despues de algunos cambios, también satisfacctorias, aunque da algunos fallos relacionados con las directivas de angularjs, aunque no son errores en sí.
