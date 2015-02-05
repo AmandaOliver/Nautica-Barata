@@ -3,19 +3,15 @@
 
 
 <h2>ÍNDICE</h2>
+
 <ol>
+
 <li>ESTRUCTURA DE FICHEROS</li>
-
 <li>MODELO VISTA CONTROLADOR</li>
-
 <li>BOOTSTRAP</li>
-
 <li>ANGULAR JS</li>
-
 <li>PREPROCESADORES</li>
-
 <li>HEROKU</li>
-
 <li>GIT</li>
 <li>PROBLEMAS ENCONTRADOS</li>
 <li>REPARTO DE TAREAS</li>
@@ -132,9 +128,18 @@ PONED ESTO BONITO:
 
 ANTONIO -->
 
-AMANDA -->
+<h4>Amanda:</h4><br>
+<ul>
+<li>Encargada de la parte "visual" de la web, estilo, colores, estructura...</li>
+<li>Encargada de la adaptación del módulo ngcart (carrito) a la aplicación, traducción e implementación</li>
+<li>Encargada de la implementación de la vista Carrito</li>
+<li>Encargada de la implementación de la distribución por categorías de los productos</li>
+<li>Encargada de la realización del json de productos</li>
+<li>Encargada de realizar el despliegue en el servidor</li>
+			</ul>
 
-<ul>DIEGO:<br>
+<h4>DIEGO:</h4><br>
+<ul>
 <li>Encargado de la implementación, implantación y manejo de la base de datos.</li>
 <li>Encargado de redactar la documentación.</li>
 <li>Diferentes tareas en la implementación de Angular (filtrado, selección...)</li>
