@@ -80,7 +80,7 @@ de la página.
 Descrito anteriormente.
 
 4.5. Control de Usuarios
-PARA ANTONIO
+Vista de login y controladores de login.js así como users.json, estos elementos están encargados de controlar el acceso de usuarios, para ello se permite registrarse, iniciar sesión y cerrar sesión, se controla que no se pueda crear dos usuarios con el mismo username, así como se restringe el acceso a la vista cuenta a cualquier persona no logeada. Tambien se controla que solo el administrador pueda acceder a añadir productos.
 
 
 5.PREPROCESADORES
@@ -127,7 +127,21 @@ El reparto de tareas ha quedado de la siguiente forma:
 
 PONED ESTO BONITO:
 
-ANTONIO -->
+<h4>ANTONIO:</h4>
+<ul>
+<li>Encargado del "routeo" de la web</li>
+<li>Encargado de la implementación de login.js</li>
+<li>Encargado de la implementación de la vista login</li>
+<li>Encargado de la realización del json users</li>
+<li>Encargado del la implementación de todas las vistas del footer(vistas: condiciones generales, política de privacidad...)</li>
+<li>Encargado de la implementación de la vista add-prod</li>
+<li>Encargado de la implementación de productos.js</li>
+<li>Encargado de la implementacion de la vista contact us</li>
+<li>Encargado de la implementacion de sendemail.php</li>
+<li>Encargado de la implementacion de emailventa.php</li>
+<li>Encargado de la implementacion de la vista venta.html</li>
+<li>Encargado de la implementacion de la vista cuenta.html</li>
+</ul>
 
 <h4>AMANDA:</h4>
 <ul>
