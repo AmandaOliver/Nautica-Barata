@@ -55,6 +55,10 @@ nauticaBarataApp.config(function ($routeProvider) {
             templateUrl: 'views/contact-us.html',
             controller: ''
         })
+        .when('/add-p', {
+            templateUrl: 'views/add-prod.html',
+            controller: 'prodCtrl'
+        })
         .when('/c-env', {
             templateUrl: 'views/condiciones-envio.html',
             controller: ''
