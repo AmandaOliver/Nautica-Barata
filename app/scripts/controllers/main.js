@@ -16,7 +16,7 @@ var nauticaBarataApp = angular.module('nauticaBarataApp', [
     'ngTouch',
     'ngCart'
   ]);
-
+//rutas
 nauticaBarataApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {

@@ -1,4 +1,5 @@
 var productos = {};
+//carga de productos de productos.json
 nauticaBarataApp.run(function ($http) {
     $http.get("scripts/productos.json").success(function (data) {
         productos.items = data;
@@ -18,6 +19,7 @@ nauticaBarataApp.filter("checkedProd", function () {
     }
 });
 
+//controlador para añadir nuevos productos
 nauticaBarataApp.controller('prodCtrl', function ($scope) {
     $scope.productos = productos;
     $scope.addProd = function (prodDetails) {

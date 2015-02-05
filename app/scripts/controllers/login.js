@@ -38,7 +38,7 @@ nauticaBarataApp.factory("auth", function ($cookies, $cookieStore, $location) {
         }
     }
 });
-
+//carga de usuarios de users.json
 nauticaBarataApp.run(function ($http) {
     $http.get("scripts/users.json").success(function (data) {
         users.items = data;
@@ -65,6 +65,8 @@ nauticaBarataApp.controller('loginController', function ($scope, auth) {
             auth.login($scope.username, $scope.password);
         }
     }
+    //funcion que registra un nuevo usuario
+    //si el nombre de usuario existe no se registra al usuario
     $scope.addUser = function (userDetails) {
         var valido = true;
         angular.forEach($scope.users.items, function (item) {
@@ -91,8 +93,7 @@ nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) 
     $scope.users = users;
     $scope.username = $cookies.username;
     $scope.password = $cookies.password;
-    //la función logout que llamamos en la vista llama a la función
-    //logout de la factoria auth
+    //funcion que permite cambiar de contraseña al usuario
     $scope.changePassword = function (pass) {
         var valido = false;
         if (pass.password == pass.password2) {
@@ -107,6 +108,8 @@ nauticaBarataApp.controller('homeController', function ($scope, $cookies, auth) 
         }
         alert("contraseña cambiada");
     }
+    //la función logout que llamamos en la vista llama a la función
+    //logout de la factoria auth
     $scope.logout = function () {
         auth.logout();
     }
