@@ -30,7 +30,7 @@ nauticaBarataApp.controller('prodCtrl', function ($scope) {
             }
         })
         if (valido == true) {
-            users.items.push({
+            productos.items.push({
                 categoria: prodDetails.username,
                 nombre: prodDetails.nombre,
                 precio: prodDetails.precio,

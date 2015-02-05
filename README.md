@@ -1,5 +1,8 @@
 <h1>Documentación de Náutica Barata</h1>
 <a href="http://nauticabarata.esy.es">Enlace al sitio web</a>
+Nota: para entrar como administrador y ver el enlace a añadir producto:
+Usuario:administrador
+Contraseña:1234
 
 
 <h2>ÍNDICE</h2>
@@ -168,3 +171,8 @@ siendo todas satisfactorias. (Nosotros apenas hemos tocado los css, mayormente h
 También se han realizado pruebas a los html mediante esta otra web 
     http://validator.w3.org/check
 siendo, despues de algunos cambios, también satisfacctorias, aunque da algunos fallos relacionados con las directivas de angularjs, aunque no son errores en sí.
+
+11.IDEA DEL PROYECTO
+---------------------
+
+La idea surge de la página web <a href="http://www.nauticabarata.com">Náutica Barata</a> que como se puede ver está creada con una herramienta de creación de páginas web que deja mucho que desear, es una página lenta y mal estructurada, cuya navegación no es nada intuitiva.
