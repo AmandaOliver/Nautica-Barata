@@ -18,6 +18,9 @@ Contraseña:1234
 <li>GIT</li>
 <li>PROBLEMAS ENCONTRADOS</li>
 <li>REPARTO DE TAREAS</li>
+<li>PRUEBAS</li>
+<li>IDEA DEL PROYECTO</li>
+<li>GRUNT</li>
 
 </ol>
 
@@ -162,17 +165,29 @@ El reparto de tareas ha quedado de la siguiente forma:
 <li>Diferentes tareas en la implementación de Angular (filtrado, selección...)</li>
 </ul>
 
+y la planificación temporal se puede ver en la siguiente imagen
+<img src="app/images/Gantt.png"/>
+
 10.PRUEBAS
 -----------
 Se han realizado pruebas a las hojas de estilo mediante la web 
     http://jigsaw.w3.org/css-validator/#validate_by_upload
-siendo todas satisfactorias. (Nosotros apenas hemos tocado los css, mayormente hemos aplicado las clases que éstos formatean).
+aparecen algunos errores en algunos de los css otros son satisfactorios (Nosotros apenas hemos tocado los css, mayormente hemos aplicado las clases que éstos formatean).
 
 También se han realizado pruebas a los html mediante esta otra web 
     http://validator.w3.org/check
-siendo, despues de algunos cambios, también satisfacctorias, aunque da algunos fallos relacionados con las directivas de angularjs, aunque no son errores en sí.
+Hemos obtenido algunos errores en algunas vistas al usar ng-model en inmput, pero, dado que esto se usaba en tutoriales de angularjs y la aplicacion web funciona sin que aparezcan errores en consola no le hemos dado mayor importancia.
+siendo, despues de algunos cambios, también satisfacctorias.
+
+La aplicación funciona y se ve bien en los navegadores más comunes. Esto se ha comprobado con la web        
+    http://browsershots.org/http://nauticabarata.esy.es/app/
 
 11.IDEA DEL PROYECTO
 ---------------------
 
 La idea surge de la página web <a href="http://www.nauticabarata.com">Náutica Barata</a> que como se puede ver está creada con una herramienta de creación de páginas web que deja mucho que desear, es una página lenta y mal estructurada, cuya navegación no es nada intuitiva.
+
+12.GRUNT
+--------
+
+Se ha empleado grunt (uglify) para la reducción de ficheros automática. Se ha creado un fichero gruntfile.js para configurar toda la automatización de procesos, entre otros la instalación de dependencias mostradas en package.json. El directorio distribuido (/dist) se ha creado haciendo grunt build. Y durante el desarrollo hemos usado el servidor local creado por grunt serve para ver los cambios.
